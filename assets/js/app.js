@@ -31,11 +31,25 @@ app.setWebsite = function setWebsite() {
   // code BELOW this line for challenge #3 & bonus -->
 
   // use a prompt to get user's favorite website and save it to a variable
-  var favoriteWebsiteInput = prompt("What is your favorite website?");
+  //var favoriteWebsiteInput = prompt("What is your favorite website?");
   // select the element with the id "favorite-website" and save it to a variable
   // select this <span id="favorite-website">...</span>
-  var favoriteWebsiteElement = document.getElementById("favorite-website"); 
+  //var favoriteWebsiteElement = document.getElementById("favorite-website"); 
   // set the inner html of the element to the favoriteWebsiteElement
-  favoriteWebsiteElement.innerHTML = favoriteWebsiteInput;
+  //favoriteWebsiteElement.innerHTML = favoriteWebsiteInput;
+
+  // use a prompt to get user's favorite website and save it to a variable
+  var favoriteWebsiteInputStr = prompt("What is your favorite website?"); // www.google.com
+  // display a string as a hyperlink "<a href="http://www.google.com">www.google.com</a>"
+
+  var favoriteWebsiteInputLink = favoriteWebsiteInputStr.link("http://" + favoriteWebsiteInputStr);
+
+
+  // select the element with the id "favorite-website" and save it to a variable
+  var favoriteWebsiteElement = document.getElementById("favorite-website");
+
+  // set the inner html of the element to the favoriteWebsiteInputLink
+  favoriteWebsiteElement.innerHTML = favoriteWebsiteInputLink;
+
 
 } // <-- code ABOVE this line for challenge #3 & bonus

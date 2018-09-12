@@ -120,7 +120,7 @@ var firstNameElement = document.getElementById("first-name");
 // set the inner html of the element to the user's name
 firstNameElement.innerHTML = firstNameInput;
 
-# Third Challenge:
+## Third Challenge:
 - Given: <span id="favorite-website">...</span>
 
 - Problem: Inside the function setWebsite, prompt the user for their favorite website and use it to set the inner HTML of the element with id "favorite-website". Display the website as plain text rather than a link.
@@ -132,3 +132,26 @@ var favoriteWebsiteInput = prompt("What is your favorite website?");
 var favoriteWebsiteElement = document.getElementById("favorite-website"); 
 // set the inner html of the element to the favoriteWebsiteElement
 favoriteWebsiteElement.innerHTML = favoriteWebsiteInput;
+
+## Bonus Challenge:
+- Refactor the setWebsite function in order for it to not just render the website as text, but to render it as a clickable anchor element with the href set to the URL of the user's favorite website they're prompted for and the display text of the anchor element set to "find out here!".
+
+Hint: Don't forget to add "http://" to the beginning of the site URL if you want the link to work!
+
+// use a prompt to get user's favorite website and save it to a variable
+var favoriteWebsiteInputStr = prompt("What is your favorite website?"); // www.google.com
+// display a string as a hyperlink "<a href="http://www.google.com">www.google.com</a>"
+
+var favoriteWebsiteInputLink = favoriteWebsiteInputStr.link("http://" + favoriteWebsiteInputStr);
+
+
+// select the element with the id "favorite-website" and save it to a variable
+var favoriteWebsiteElement = document.getElementById("favorite-website");
+
+// set the inner html of the element to the favoriteWebsiteInputLink
+favoriteWebsiteElement.innerHTML = favoriteWebsiteInputLink;
+
+ex)
+    var str = "www.google.com";
+    var result = str.link("http://" + str);
+    document.getElementById("demo").innerHTML = result;
