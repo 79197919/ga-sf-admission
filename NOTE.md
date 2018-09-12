@@ -110,3 +110,25 @@ Challenges:
 - Given: <span id="first-name">Your name here...</span>
 
 - Problem: Inside the function 'setName', prompt is given to the user to find out what their name is. Select the element with id "first-name" and set its inner HTML to the input received from the user.
+
+- First, prompt is given to the user to find what their name is and store in variable
+// use a prompt to get user's name and save it to a variable
+var firstNameInput = prompt("What is your name?");
+// select the element with the id "first-name" and save it to a variable
+// select this <span id="first-name">Your name here...</span>
+var firstNameElement = document.getElementById("first-name"); 
+// set the inner html of the element to the user's name
+firstNameElement.innerHTML = firstNameInput;
+
+# Third Challenge:
+- Given: <span id="favorite-website">...</span>
+
+- Problem: Inside the function setWebsite, prompt the user for their favorite website and use it to set the inner HTML of the element with id "favorite-website". Display the website as plain text rather than a link.
+
+// use a prompt to get user's favorite website and save it to a variable
+var favoriteWebsiteInput = prompt("What is your favorite website?");
+// select the element with the id "favorite-website" and save it to a variable
+// select this <span id="favorite-website">...</span>
+var favoriteWebsiteElement = document.getElementById("favorite-website"); 
+// set the inner html of the element to the favoriteWebsiteElement
+favoriteWebsiteElement.innerHTML = favoriteWebsiteInput;
