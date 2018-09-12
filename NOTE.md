@@ -89,3 +89,24 @@ favoritePokemonElement.innerHTML = favPokemonInput;
 check it:
 > document.getElementById("favorite-pokemon")
 // output: <span id=​"favorite-pokemon">​pika​</span>​
+
+Challenges:
+* Instructions: For each challenge below, work in the JavaScript file at the relative path, assets/js/app.js using a text editor like Sublime Text or Atom. 
+* This working file will be submitted to General Assembly Admissions. In order to view and make changes to the working file.
+
+* !! Important: each time you edit and save the working file you must refresh the HTML page to load the changes into into it. To execute the code, click the button that corresponds to the challenge being worked on. Find any error messages in the JavaScript console.
+
+## First Challenge: 
+- Given: <img id="pokeball" src="assets/imgs/pokeball.png">
+- Problem: Inside the function shakePokeball, add the class "shake" to the element with id "pokeball", then click the button "Shake Pokeball".
+
+// select the element with the `id` pokeball and save it to a variable
+  var pokeballElement = document.getElementById("pokeball");
+  
+// change the element's class to "shake"
+  pokeballElement.className = "shake";
+
+## Second Challenge:
+- Given: <span id="first-name">Your name here...</span>
+
+- Problem: Inside the function 'setName', prompt is given to the user to find out what their name is. Select the element with id "first-name" and set its inner HTML to the input received from the user.

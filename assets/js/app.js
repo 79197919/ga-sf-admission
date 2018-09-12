@@ -6,6 +6,11 @@ var app = new Object();
 
 app.shakePokeball = function shakePokeball() {
   // code BELOW this line for challenge #1 -->
+
+  // select the element with the `id` pokeball and save it to a variable
+  var pokeballElement = document.getElementById("pokeball");
+  // change the element's class to "shake"
+  pokeballElement.className = "shake";
   
 } // <-- code ABOVE this line for challenge #1
 
