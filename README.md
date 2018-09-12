@@ -10,3 +10,5 @@ After this workshop, developers will be able to:
 1) Change an element's CSS class using JavaScript
 2) Capture User Input
 3) Display an output to the user on the page
+
+## Demo: http://heggy.me/ga-sf-admission/index.html
