@@ -1,4 +1,4 @@
-#GA SF Admissions Assignment
+# GA SF Admissions Assignment
 
 This is the admission assignment for General Assembly in San Francisco. Open the `index.html` file to get started.
 
@@ -11,4 +11,4 @@ After this workshop, developers will be able to:
 2) Capture User Input
 3) Display an output to the user on the page
 
-## Demo: http://heggy.me/ga-sf-admission/index.html
+## [Demo](https://heggy231.github.io/ga-sf-admission/)
